@@ -1,0 +1,35 @@
+# Jekyll 配置文件
+
+# 基本信息
+title: "廖家龙的博客"
+description: "Java工程师的技术分享空间"
+baseurl: "" # 如果部署在子目录，填写子目录路径
+url: "https://007bba.github.io" # 你的域名
+
+# 作者信息
+author:
+  name: "廖家龙"
+  email: "2091772139@qq.com"
+  phone: "14745530568"
+
+# 构建设置
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+# 插件
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# 主题（可选，可以使用默认主题或自定义）
+theme: minima
+
+# 排除文件
+exclude:
+  - README.md
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

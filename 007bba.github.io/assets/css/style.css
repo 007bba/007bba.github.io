@@ -1,0 +1,172 @@
+/* 基础样式 */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* 容器 */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 头部 */
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header h1 a {
+    color: #333;
+    text-decoration: none;
+}
+
+header p {
+    margin: 10px 0 0 0;
+    color: #666;
+}
+
+/* 导航 */
+header nav {
+    margin-top: 15px;
+}
+
+header nav a {
+    margin: 0 15px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* 主要内容 */
+main {
+    background-color: #fff;
+    padding: 40px 0;
+    min-height: 60vh;
+}
+
+/* 文章列表 */
+.post-list {
+    list-style: none;
+    padding: 0;
+}
+
+.post-list li {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 20px 0;
+}
+
+.post-list li:last-child {
+    border-bottom: none;
+}
+
+.post-list h3 {
+    margin: 0 0 10px 0;
+}
+
+.post-list h3 a {
+    color: #333;
+    text-decoration: none;
+}
+
+.post-list h3 a:hover {
+    color: #007bff;
+}
+
+.post-date {
+    color: #666;
+    font-size: 0.9em;
+}
+
+/* 文章页面 */
+.post {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.post header {
+    text-align: left;
+    border-bottom: none;
+    padding: 0;
+}
+
+.post h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.post-meta {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.post-content {
+    margin-top: 30px;
+}
+
+.post-content h2 {
+    margin-top: 40px;
+    color: #333;
+}
+
+.post-content p {
+    margin-bottom: 20px;
+}
+
+.post-content code {
+    background-color: #f4f4f4;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+}
+
+.post-content pre {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+/* 页脚 */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    header h1 {
+        font-size: 2em;
+    }
+    
+    header nav a {
+        display: block;
+        margin: 5px 0;
+    }
+}

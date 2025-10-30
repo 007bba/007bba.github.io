@@ -1,0 +1,26 @@
+source "https://rubygems.org"
+
+# Jekyll 核心
+gem "jekyll", "~> 4.3.0"
+
+# GitHub Pages 兼容性（可选）
+# gem "github-pages", group: :jekyll_plugins
+
+# 常用插件
+gem "jekyll-feed", "~> 0.12"
+gem "jekyll-sitemap", "~> 1.4"
+
+# 主题（使用默认主题）
+gem "minima", "~> 2.5"
+
+# Windows 兼容性
+gem "wdm", "~> 0.1.1", :platforms => [:mingw, :mswin, :x64_mingw]
+
+# 开发依赖
+group :jekyll_plugins do
+  gem "jekyll-feed"
+  gem "jekyll-sitemap"
+end
+
+# 本地预览
+# gem "webrick", "~> 1.7"
